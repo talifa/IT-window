@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Как я прорубила своё IT-окно в Европу</title>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, viewport-fit=cover"
+		/>
+		<link
+			rel="stylesheet"
+			href="node_modules/@shower/ribbon/styles/styles.css"
+		/>
+		<style>
+			.shower {
+				--slide-ratio: calc(16 / 9);
+			}
+		</style>
+	</head>
+	<body class="shower list">
+		<header class="caption">
+			<h1>Как я прорубила своё IT-окно в Европу</h1>
+			<p>Талифа Аушева</p>
+		</header>
+
+		<section class="slide clear" id="cover">
+			<h2>Как я прорубила своё IT-окно в Европу</h2>
+			<p>
+				о собеседованиях, культурных сюрпризах и о том, как не потерять
+				рассудок
+			</p>
+			<p>
+				Brought to you by
+				<a href="https://t.me/talifa">Талифа Аушева</a>
+			</p>
+			<figure>
+				<img
+					class="cover"
+					src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/9afe0493484903.5e66500f8dea4.gif"
+					alt="slide cover"
+				/>
+			</figure>
+			<style>
+				#cover::before {
+					content: "";
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					background-color: rgba(0, 0, 0, 0.5);
+					z-index: 1;
+				}
+
+				#cover h2 {
+					position: relative;
+					z-index: 2;
+					margin: 30px 0 0;
+					color: white;
+					text-align: center;
+					font-size: 70px;
+					text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+				}
+
+				#cover p {
+					position: relative;
+					z-index: 2;
+					margin: 10px 0 0;
+					text-align: center;
+					color: white;
+					font-style: italic;
+					font-size: 20px;
+				}
+
+				#cover p a {
+					color: white;
+				}
+			</style>
+		</section>
+
+		<section class="slide">
+			<h2>Обо мне</h2>
+			<div class="columns two">
+				<div>
+					<img
+						src="pictures/me.jpeg"
+						alt="Талифа Аушева"
+						width="350"
+						id="avatar"
+					/>
+				</div>
+				<ul id="about-me">
+					<li>
+						<strong>Senior Software Engineer </strong> в HR-tech в
+						городе Мюнхен
+					</li>
+					<li><strong>Преподаватель</strong> в ReDI School Munich</li>
+					<li>
+						Вхожу в ТОП-3 лучших программистов
+						<strong>Карабулака</strong> по мнению моей бабушки
+					</li>
+				</ul>
+			</div>
+			<style>
+				#avatar {
+					border-radius: 50%;
+					object-fit: cover;
+					height: 350px;
+					object-position: center 20%;
+				}
+				#about-me {
+					line-height: 1.7;
+				}
+			</style>
+		</section>
+		<section class="slide">
+			<h2>План на сегодня</h2>
+			<div class="columns two">
+				<ol id="agenda">
+					<li>
+						База
+						<!-- <span>Откуда я начинала и что мотивировало</span> -->
+					</li>
+					<li class="next">
+						Поиск работы
+						<!-- <span>Собеседования, отказы и первые успехи</span> -->
+					</li>
+					<li class="next">
+						Сложности
+						<!-- <span>Что оказалось не таким, как ожидала</span> -->
+					</li>
+					<li class="next">
+						На новом месте
+						<!-- <span>Как не потерять рассудок в процессе</span> -->
+					</li>
+					<li class="next">
+						Выводы
+						<!-- <span>Что я узнала и чем могу поделиться</span> -->
+					</li>
+				</ol>
+				<div>
+					<img
+						src="pictures/dragon.png"
+						alt="Дракон"
+						width="450"
+						id="dragon"
+					/>
+				</div>
+			</div>
+			<style>
+				#agenda li {
+					line-height: 1.6;
+					color: #666;
+					font-size: 1.2em;
+				}
+			</style>
+		</section>
+
+		<section class="slide">
+			<h2>От Карабулака до Мюнхена</h2>
+			<div class="timeline">
+				<div class="timeline-item">
+					<div class="year">1994</div>
+					<div class="event">🎯 Решение: "Хочу заграницу!"</div>
+				</div>
+				<div class="timeline-item">
+					<div class="year">2000</div>
+					<div class="event">
+						📚 Подготовка: изучение языка и технологий
+					</div>
+				</div>
+				<div class="timeline-item">
+					<div class="year">2018</div>
+					<div class="event">
+						🔍 Работаем работу: резюме, собеседования
+					</div>
+				</div>
+				<div class="timeline-item">
+					<div class="year">2022</div>
+					<div class="event">✈️ Оффер и переезд</div>
+				</div>
+				<div class="timeline-item">
+					<div class="year">2024</div>
+					<div class="event">
+						🚀 Senior разработчик + преподаватель
+					</div>
+				</div>
+			</div>
+			<style>
+				.timeline {
+					display: flex;
+					flex-direction: column;
+					gap: 10px;
+					margin: 20px 0;
+				}
+				.timeline-item {
+					display: flex;
+					align-items: center;
+					gap: 10px;
+					padding: 5px;
+					border-left: 4px solid #007acc;
+					background: #f8f9fa;
+					border-radius: 8px;
+				}
+				.year {
+					font-weight: bold;
+					font-size: 24px;
+					color: #007acc;
+					min-width: 80px;
+				}
+				.event {
+					font-size: 20px;
+				}
+			</style>
+		</section>
+		<section class="slide clear" id="motivation">
+			<h2 class="center">Мотивацию надо поднять!</h2>
+			<h2 class="center next">Но все будет честно.</h2>
+			<h2 class="center next">Без паники!</h2>
+
+			<figure>
+				<img
+					src="https://p12.com.ua/public/user_files/the-office.gif"
+					alt="Волк"
+					class="cover"
+				/>
+			</figure>
+			<style>
+				#motivation h2 {
+					position: relative;
+					z-index: 2;
+					margin: 30px 0 0;
+					color: white;
+					text-align: center;
+					font-size: 70px;
+					text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+				}
+				#motivation::before {
+					content: "";
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					background-color: rgba(0, 0, 0, 0.5);
+					z-index: 1;
+				}
+			</style>
+		</section>
+
+		<section class="slide" id="baza">
+			<h2>Есть два пути</h2>
+
+			<div class="columns two">
+				<div class="next">
+					<h3>🐢 Мой путь</h3>
+					<ul>
+						<li>Диплом инженера ~ 5 лет</li>
+						<li>Стаж работы в IT ~ 7 лет</li>
+						<li>Стагнация ~ 3 года</li>
+						<li>Смена направления ~ 1 год</li>
+						<li>
+							Пассивное изучение английского и программирования ~
+							5 лет
+						</li>
+					</ul>
+				</div>
+				<div class="next">
+					<h3>🚀 Короткий путь</h3>
+					<ul>
+						<li>
+							Диплом технической специальности ~ 4 года
+							<strong>или</strong>
+						</li>
+						<li>Стаж работы в IT ~ 3 года</li>
+						<li>
+							<strong>Активное</strong> изучение английского и
+							программирования ~ 1-2 года
+						</li>
+					</ul>
+				</div>
+				<img
+					src="pictures/calculate.png"
+					alt="Расчет"
+					width="600"
+					class="next overlay-image"
+				/>
+			</div>
+			<style>
+				#baza li {
+					line-height: 1.5;
+				}
+				.overlay-image {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					z-index: 10;
+					box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+				}
+			</style>
+		</section>
+
+		<section class="slide clear" id="path">
+			<img src="pictures/path.png" alt="Путь" class="cover" />
+		</section>
+
+		<section class="slide clear" id="problem">
+			<img src="pictures/59.png" alt="Проблема" class="cover" />
+		</section>
+		<section class="slide clear" id="problem-2">
+			<img src="pictures/giraffe.png" alt="Проблема" class="cover" />
+		</section>
+		<section class="slide" id="education">
+			<h2>Обучение (личное мнение)</h2>
+			<div class="columns two">
+				<div>
+					<h3>Что не имеет значения: ⛔</h3>
+					<ul>
+						<li>Язык программирования</li>
+						<li>Особенность курса</li>
+						<li>Стоимость курса</li>
+						<li>Отзывы выпускников</li>
+					</ul>
+				</div>
+				<div>
+					<h3>Что имеет значение: ✅</h3>
+					<ul>
+						<li>Затраченное время</li>
+						<li>Затраченные усилия</li>
+						<li>Упорство</li>
+						<li>Хороший ментор</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="slide" id="education-2">
+			<div class="columns two">
+				<div>
+					<h2>Кого может заменить ИИ?</h2>
+					<ul>
+						<li>Тех, чью работу можно сделать в "чате"</li>
+						<li>Тех, кто не хочет учиться</li>
+						<li>
+							Тех, кто не любит работать с людьми или деньгами
+						</li>
+						<li>Специалистов по монотонности</li>
+						<li>Скучные легкие работы</li>
+					</ul>
+				</div>
+				<div>
+					<h2>Кого не может заменить ИИ?</h2>
+					<ul>
+						<li>
+							Работа предполагает руководство людьми и деньгами
+						</li>
+						<li>Много движения</li>
+						<li>Проектирование инфраструктуры</li>
+						<li>Работы "низкого уровня"</li>
+						<li>Творческие работы</li>
+						<li>Безопасность</li>
+						<li>Скучные тяжелые работы</li>
+					</ul>
+				</div>
+			</div>
+			<style>
+				#education-2 ul {
+					line-height: 1.5;
+				}
+			</style>
+		</section>
+		<section class="slide clear" id="sfera">
+			<img src="pictures/sfera.png" alt="Сфера" class="cover" />
+		</section>
+		<section class="slide clear" id="field">
+			<img src="pictures/field.png" alt="Field" class="cover" />
+		</section>
+
+		<section class="slide" id="mast">
+			<h2>Мастхэв</h2>
+			<ul>
+				<li>🗣️ Английский/Немецкий</li>
+				<li>💻 Технические навыки</li>
+				<li>😊 Оптимизм, дисциплина, дружелюбие</li>
+				<li>🚀 Амбиции</li>
+			</ul>
+		</section>
+		<section class="slide" id="slozhnosti">
+			<img src="pictures/english.png" alt="Язык" class="cover" />
+		</section>
+		<section class="slide" id="english2">
+			<img src="pictures/english3.png" alt="Язык" class="cover" />
+		</section>
+		<section class="slide" id="interview">
+			<h2>Собеседования</h2>
+			<div class="columns two">
+				<div>
+					<ul>
+						<li>Ожидайте 5-8 этапов собеседования</li>
+						<li>Отказов будет больше в миллион раз, чем офферов</li>
+						<li>Иногда фидбек не имеет смысла</li>
+						<li>Повторите числительные</li>
+					</ul>
+				</div>
+				<div>
+					<img
+						src="pictures/interview.png"
+						alt="Собеседования"
+						width="400"
+					/>
+				</div>
+			</div>
+			<style>
+				#interview ul {
+					line-height: 1.8;
+				}
+			</style>
+		</section>
+		<section class="slide" id="viza">
+			<h2>Голубая карта, Фриланс-виза или Рабочая виза? 🌐 🇩🇪</h2>
+			<div class="columns three">
+				<div>
+					<p>💙 Голубая карта ЕС</p>
+					<ul>
+						<li>
+							<strong>Для кого:</strong> Специалисты с высшим
+							образованием
+						</li>
+						<li>
+							<strong>Требования:</strong> Трудовой договор +
+							минимальный доход
+						</li>
+						<li>
+							<strong>Плюсы:</strong> Ускоренное ПМЖ,
+							воссоединение семьи
+						</li>
+					</ul>
+				</div>
+				<div class="next">
+					<p>🔧 Рабочая виза</p>
+					<ul>
+						<li>
+							<strong>Для кого:</strong> IT-специалисты,
+							квалифицированные работники
+						</li>
+						<li>
+							<strong>Требования:</strong> Трудовой договор +
+							опыт/образование
+						</li>
+						<li>
+							<strong>Плюсы:</strong> Гибкость требований к
+							образованию
+						</li>
+					</ul>
+				</div>
+				<div class="next">
+					<p>💼 Фриланс-виза</p>
+					<ul>
+						<li>
+							<strong>Для кого:</strong> Предприниматели и
+							фрилансеры
+						</li>
+						<li>
+							<strong>Требования:</strong> Бизнес-план +
+							финансовые средства
+						</li>
+						<li>
+							<strong>Плюсы:</strong> Самостоятельная деятельность
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div
+				class="next"
+				style="
+					margin-top: 40px;
+					text-align: center;
+					font-size: 1.1em;
+					color: #666;
+				"
+			>
+				<strong>Ключевое различие:</strong> Голубая карта = высшее
+				образование + наёмная работа | Рабочая виза = гибкость | Фриланс
+				= самозанятость
+			</div>
+			<style>
+				#viza li {
+					line-height: 1.2;
+					font-size: 0.8em;
+				}
+			</style>
+		</section>
+		<section class="slide" id="no-work">
+			<h2>А если работы нет?</h2>
+			<div>
+				Cуществуют специальная виза и разрешение на пребывание
+				(Aufenthaltserlaubnis) для поиска работы. Они дадут вам право
+				приехать в страну и уже на месте спокойно искать подходящую вам
+				вакансию.
+			</div>
+			<div class="next vertical-center">
+				<img src="pictures/makeit.png" alt="work" width="300" />
+				<a href="https://www.make-it-in-munich.com">
+					make-it-in-munich.com
+				</a>
+				<img src="pictures/qr.png" alt="qr" width="200" />
+			</div>
+			<style>
+				.vertical-center {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					gap: 20px;
+				}
+			</style>
+		</section>
+
+		<section class="slide" id="husband">
+			<div class="columns two">
+				<figure>
+					<blockquote>
+						<p>
+							"Жениться на айтишнице, поддерживать и переехать по
+							визе кайфа"
+						</p>
+					</blockquote>
+					<figcaption>Рекомендация моего мужа</figcaption>
+				</figure>
+				<img src="pictures/hus.png" alt="Поиск работы" width="450" />
+			</div>
+		</section>
+
+		<section class="slide" id="documents">
+			<h2>Что нужно 📋</h2>
+			<div class="columns two">
+				<ul>
+					<li>👶 Свидетельство о рождении с апостилем</li>
+					<li>💍 Свидетельство о браке с апостилем</li>
+					<li>📘 Загранпаспорт</li>
+					<li>🎓 Переведенный диплом с апостилем</li>
+					<li>🚫 Справка о судимости</li>
+					<li>👨‍👩‍👧‍👦 + все остальные</li>
+				</ul>
+				<img
+					src="pictures/copy.png"
+					alt="Что лучше иметь на руках"
+					width="400"
+				/>
+			</div>
+			<style>
+				#documents ul {
+					line-height: 1.5;
+				}
+			</style>
+		</section>
+		<section class="slide" id="hasb">
+			<div class="columns two">
+				<ul>
+					<li>Обязательно быть сеньором? Нет.</li>
+					<li>Язык можно выучить за год до рабочего уровня? Да.</li>
+					<li>Можно работать в Германии без диплома? Да.</li>
+					<li>Нужно быть в Германии? Нет.</li>
+					<li>Можно переехать только с оффером? Нет.</li>
+				</ul>
+				<img src="pictures/hasb.png" alt="hasb" width="350" />
+			</div>
+		</section>
+		<section class="slide clear" id="aura">
+			<img src="pictures/aura.jpg" alt="Арина Фостерс" class="cover" />
+		</section>
+		<section class="slide clear" id="novoe-mesto">
+			<img src="pictures/ing.jpg" alt="Кавказ" class="cover" />
+		</section>
+
+		<section class="slide" id="vyvody">
+			<p>
+				Переезд в другую страну - это <strong>сложно</strong>.
+				<br />Изучение новой профессии и языка - это
+				<strong>сложно</strong>.<br />
+				Совмещать это с семьей или детьми - это ещё
+				<strong>сложнее</strong>.
+			</p>
+
+			<h2 class="shout next">Но можно.</h2>
+		</section>
+		<section class="slide clear" id="barbie">
+			<img src="pictures/wtm.png" alt="barbie" class="cover" />
+		</section>
+		<section class="slide" id="pohvalit">
+			<h2 class="shout next" id="pohvalit-title">Похвалите себя!</h2>
+			<img
+				src="pictures/cute.jpg"
+				alt="Совмещение"
+				width="400"
+				class="cover"
+			/>
+			<style>
+				#pohvalit-title {
+					/* color: black; */
+					text-align: center;
+					text-shadow: 4px 4px 10px white;
+				}
+			</style>
+		</section>
+		<section class="slide" id="thank-you">
+			<h2 class="shout">Спасибо за внимание!</h2>
+		</section>
+		<section class="slide" id="see-more">
+			<h2 class="shout">
+				<div id="flex-container">
+					<img
+						src="https://realmonero.com/static/media/telegram.8b9d3b2993190f89b989.png"
+						alt="Telegram logo"
+					/>
+					<a href="https://t.me/talifa">t.me/talifa</a>
+				</div>
+			</h2>
+			<style>
+				#see-more h2 {
+					font-size: 90px;
+				}
+
+				#see-more img {
+					width: 1em;
+				}
+				#flex-container {
+					display: flex;
+					justify-content: center;
+				}
+			</style>
+		</section>
+		<!-- <footer class="badge">
+			<a href="https://github.com/shower/shower">Fork me on GitHub</a>
+		</footer> -->
+
+		<div class="progress"></div>
+
+		<script src="node_modules/@shower/core/dist/shower.js"></script>
+		<!-- Copyright © 3000 Yours Truly, Famous Inc. -->
+	</body>
+</html>
