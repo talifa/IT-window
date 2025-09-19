@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 	<head>
 		<title>Как я прорубила своё IT-окно в Европу</title>
 		<meta charset="utf-8" />
@@ -11,11 +11,7 @@
 			rel="stylesheet"
 			href="node_modules/@shower/ribbon/styles/styles.css"
 		/>
-		<style>
-			.shower {
-				--slide-ratio: calc(16 / 9);
-			}
-		</style>
+		<link rel="stylesheet" href="styles/presentation.css" />
 	</head>
 	<body class="shower list">
 		<header class="caption">
@@ -23,7 +19,7 @@
 			<p>Талифа Аушева</p>
 		</header>
 
-		<section class="slide clear" id="cover">
+		<section class="slide clear" id="cover" role="banner">
 			<h2>Как я прорубила своё IT-окно в Европу</h2>
 			<p>
 				о собеседованиях, культурных сюрпризах и о том, как не потерять
@@ -40,54 +36,12 @@
 					alt="slide cover"
 				/>
 			</figure>
-			<style>
-				#cover::before {
-					content: "";
-					position: absolute;
-					top: 0;
-					left: 0;
-					right: 0;
-					bottom: 0;
-					background-color: rgba(0, 0, 0, 0.5);
-					z-index: 1;
-				}
-
-				#cover h2 {
-					position: relative;
-					z-index: 2;
-					margin: 30px 0 0;
-					color: white;
-					text-align: center;
-					font-size: 70px;
-					text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
-				}
-
-				#cover p {
-					position: relative;
-					z-index: 2;
-					margin: 10px 0 0;
-					text-align: center;
-					color: white;
-					font-style: italic;
-					font-size: 20px;
-				}
-
-				#cover p a {
-					color: white;
-				}
-			</style>
 		</section>
 
-		<section class="slide">
-			<h2>Обо мне</h2>
+		<section class="slide" aria-labelledby="about-heading">
+			<h2 id="about-heading">Обо мне</h2>
 			<div class="columns two">
 				<div>
-					<!-- <img
-						src="pictures/me.jpeg"
-						alt="Талифа Аушева"
-						width="350"
-						id="avatar"
-					/> -->
 					<img
 						src="pictures/fakeme.png"
 						alt="Талифа Аушева"
@@ -107,63 +61,30 @@
 					</li>
 				</ul>
 			</div>
-			<style>
-				#avatar {
-					border-radius: 50%;
-					object-fit: cover;
-					height: 350px;
-					object-position: center 20%;
-				}
-				#about-me {
-					line-height: 1.7;
-				}
-			</style>
 		</section>
-		<section class="slide">
-			<h2>План на сегодня</h2>
+		<section class="slide" aria-labelledby="agenda-heading">
+			<h2 id="agenda-heading">План на сегодня</h2>
 			<div class="columns two">
 				<ol id="agenda">
-					<li>
-						База
-						<!-- <span>Откуда я начинала и что мотивировало</span> -->
-					</li>
-					<li class="next">
-						Поиск работы
-						<!-- <span>Собеседования, отказы и первые успехи</span> -->
-					</li>
-					<li class="next">
-						Сложности
-						<!-- <span>Что оказалось не таким, как ожидала</span> -->
-					</li>
-					<li class="next">
-						На новом месте
-						<!-- <span>Как не потерять рассудок в процессе</span> -->
-					</li>
-					<li class="next">
-						Выводы
-						<!-- <span>Что я узнала и чем могу поделиться</span> -->
-					</li>
+					<li>База</li>
+					<li class="next">Поиск работы</li>
+					<li class="next">Сложности</li>
+					<li class="next">На новом месте</li>
+					<li class="next">Выводы</li>
 				</ol>
 				<div>
 					<img
 						src="pictures/dragon.png"
-						alt="Дракон"
+						alt="Дракон - иллюстрация к плану презентации"
 						width="450"
 						id="dragon"
 					/>
 				</div>
 			</div>
-			<style>
-				#agenda li {
-					line-height: 1.6;
-					color: #666;
-					font-size: 1.2em;
-				}
-			</style>
 		</section>
 
-		<section class="slide">
-			<h2>От Карабулака до Мюнхена</h2>
+		<section class="slide" aria-labelledby="timeline-heading">
+			<h2 id="timeline-heading">От Карабулака до Мюнхена</h2>
 			<div class="timeline">
 				<div class="timeline-item">
 					<div class="year">1994</div>
@@ -192,32 +113,6 @@
 					</div>
 				</div>
 			</div>
-			<style>
-				.timeline {
-					display: flex;
-					flex-direction: column;
-					gap: 10px;
-					margin: 20px 0;
-				}
-				.timeline-item {
-					display: flex;
-					align-items: center;
-					gap: 10px;
-					padding: 5px;
-					border-left: 4px solid #007acc;
-					background: #f8f9fa;
-					border-radius: 8px;
-				}
-				.year {
-					font-weight: bold;
-					font-size: 24px;
-					color: #007acc;
-					min-width: 80px;
-				}
-				.event {
-					font-size: 20px;
-				}
-			</style>
 		</section>
 		<section class="slide clear" id="motivation">
 			<h2 class="center">Мотивацию надо поднять!</h2>
@@ -227,31 +122,10 @@
 			<figure>
 				<img
 					src="https://p12.com.ua/public/user_files/the-office.gif"
-					alt="Волк"
+					alt="Анимация мотивации из сериала Офис"
 					class="cover"
 				/>
 			</figure>
-			<style>
-				#motivation h2 {
-					position: relative;
-					z-index: 2;
-					margin: 30px 0 0;
-					color: white;
-					text-align: center;
-					font-size: 70px;
-					text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
-				}
-				#motivation::before {
-					content: "";
-					position: absolute;
-					top: 0;
-					left: 0;
-					right: 0;
-					bottom: 0;
-					background-color: rgba(0, 0, 0, 0.5);
-					z-index: 1;
-				}
-			</style>
 		</section>
 
 		<section class="slide" id="baza">
@@ -287,24 +161,11 @@
 				</div>
 				<img
 					src="pictures/calculate.png"
-					alt="Расчет"
+					alt="Калькулятор времени для изучения IT"
 					width="600"
 					class="next overlay-image"
 				/>
 			</div>
-			<style>
-				#baza li {
-					line-height: 1.5;
-				}
-				.overlay-image {
-					position: absolute;
-					top: 50%;
-					left: 50%;
-					transform: translate(-50%, -50%);
-					z-index: 10;
-					box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-				}
-			</style>
 		</section>
 
 		<section class="slide clear" id="path">
@@ -317,8 +178,12 @@
 		<section class="slide clear" id="problem-2">
 			<img src="pictures/giraffe1.png" alt="Проблема" class="cover" />
 		</section>
-		<section class="slide" id="education">
-			<h2>Обучение (личное мнение)</h2>
+		<section
+			class="slide"
+			id="education"
+			aria-labelledby="education-heading"
+		>
+			<h2 id="education-heading">Обучение (личное мнение)</h2>
 			<div class="columns two">
 				<div>
 					<h3>Что не имеет значения: ⛔</h3>
@@ -372,16 +237,11 @@
 				</div>
 				<img
 					src="pictures/level.png"
-					alt="Уровень"
+					alt="Диаграмма уровней работы и ИИ"
 					width="600"
 					class="next overlay-image"
 				/>
 			</div>
-			<style>
-				#education-2 ul {
-					line-height: 1.5;
-				}
-			</style>
 		</section>
 		<section class="slide clear" id="sfera">
 			<figure>
@@ -416,13 +276,25 @@
 			</ul>
 		</section>
 		<section class="slide" id="slozhnosti">
-			<img src="pictures/english.png" alt="Язык" class="cover" />
+			<img
+				src="pictures/english.png"
+				alt="Сложности изучения английского языка"
+				class="cover"
+			/>
 		</section>
 		<section class="slide" id="english2">
-			<img src="pictures/english3.png" alt="Язык" class="cover" />
+			<img
+				src="pictures/english3.png"
+				alt="Уровни владения английским языком"
+				class="cover"
+			/>
 		</section>
-		<section class="slide" id="interview">
-			<h2>Собеседования</h2>
+		<section
+			class="slide"
+			id="interview"
+			aria-labelledby="interview-heading"
+		>
+			<h2 id="interview-heading">Собеседования</h2>
 			<div class="columns two">
 				<div>
 					<ul>
@@ -435,19 +307,16 @@
 				<div>
 					<img
 						src="pictures/interview.png"
-						alt="Собеседования"
+						alt="Инфографика процесса собеседований"
 						width="400"
 					/>
 				</div>
 			</div>
-			<style>
-				#interview ul {
-					line-height: 1.8;
-				}
-			</style>
 		</section>
-		<section class="slide" id="viza">
-			<h2>Голубая карта, Фриланс-виза или Рабочая виза? 🌐 🇩🇪</h2>
+		<section class="slide" id="viza" aria-labelledby="visa-heading">
+			<h2 id="visa-heading">
+				Голубая карта, Фриланс-виза или Рабочая виза? 🌐 🇩🇪
+			</h2>
 			<div class="columns three">
 				<div>
 					<p>💙 Голубая карта ЕС</p>
@@ -500,28 +369,14 @@
 					</ul>
 				</div>
 			</div>
-			<div
-				class="next"
-				style="
-					margin-top: 40px;
-					text-align: center;
-					font-size: 1.1em;
-					color: #666;
-				"
-			>
+			<div class="next visa-summary">
 				<strong>Ключевое различие:</strong> Голубая карта = высшее
 				образование + наёмная работа | Рабочая виза = гибкость | Фриланс
 				= самозанятость
 			</div>
-			<style>
-				#viza li {
-					line-height: 1.2;
-					font-size: 0.8em;
-				}
-			</style>
 		</section>
-		<section class="slide" id="no-work">
-			<h2>А если работы нет?</h2>
+		<section class="slide" id="no-work" aria-labelledby="no-work-heading">
+			<h2 id="no-work-heading">А если работы нет?</h2>
 			<div>
 				Cуществуют специальная виза и разрешение на пребывание
 				(Aufenthaltserlaubnis) для поиска работы. Они дадут вам право
@@ -529,20 +384,24 @@
 				вакансию.
 			</div>
 			<div class="next vertical-center">
-				<img src="pictures/makeit.png" alt="work" width="300" />
-				<a href="https://www.make-it-in-munich.com">
+				<img
+					src="pictures/makeit.png"
+					alt="Логотип Make it in Munich"
+					width="300"
+				/>
+				<a
+					href="https://www.make-it-in-munich.com"
+					target="_blank"
+					rel="noopener"
+				>
 					make-it-in-munich.com
 				</a>
-				<img src="pictures/qr.png" alt="qr" width="200" />
+				<img
+					src="pictures/qr.png"
+					alt="QR код для ссылки на ресурс"
+					width="200"
+				/>
 			</div>
-			<style>
-				.vertical-center {
-					display: flex;
-					align-items: center;
-					justify-content: center;
-					gap: 20px;
-				}
-			</style>
 		</section>
 
 		<section class="slide" id="husband">
@@ -556,12 +415,20 @@
 					</blockquote>
 					<figcaption>Рекомендация моего мужа</figcaption>
 				</figure>
-				<img src="pictures/hus.png" alt="Поиск работы" width="450" />
+				<img
+					src="pictures/hus.png"
+					alt="Шутливая иллюстрация о поиске работы"
+					width="450"
+				/>
 			</div>
 		</section>
 
-		<section class="slide" id="documents">
-			<h2>Что нужно 📋</h2>
+		<section
+			class="slide"
+			id="documents"
+			aria-labelledby="documents-heading"
+		>
+			<h2 id="documents-heading">Что нужно 📋</h2>
 			<div class="columns two">
 				<ul>
 					<li>👶 Свидетельство о рождении с апостилем</li>
@@ -573,18 +440,17 @@
 				</ul>
 				<img
 					src="pictures/copy.png"
-					alt="Что лучше иметь на руках"
+					alt="Список документов для переезда"
 					width="400"
 				/>
 			</div>
-			<style>
-				#documents ul {
-					line-height: 1.5;
-				}
-			</style>
 		</section>
 		<section class="slide clear" id="anabin">
-			<img src="pictures/anabin.png" alt="anabin" class="cover" />
+			<img
+				src="pictures/anabin.png"
+				alt="Скриншот сайта Anabin для проверки диплома"
+				class="cover"
+			/>
 		</section>
 		<section class="slide" id="hasb">
 			<div class="columns two">
@@ -595,14 +461,26 @@
 					<li>Нужно быть в Германии? Нет.</li>
 					<li>Можно переехать только с оффером? Нет.</li>
 				</ul>
-				<img src="pictures/hasb.png" alt="hasb" width="350" />
+				<img
+					src="pictures/hasb.png"
+					alt="Мем с ответами на частые вопросы"
+					width="350"
+				/>
 			</div>
 		</section>
 		<section class="slide clear" id="aura">
-			<img src="pictures/aura.jpg" alt="Арина Фостерс" class="cover" />
+			<img
+				src="pictures/aura.jpg"
+				alt="Фото красивого пейзажа"
+				class="cover"
+			/>
 		</section>
 		<section class="slide clear" id="novoe-mesto">
-			<img src="pictures/ing.jpg" alt="Кавказ" class="cover" />
+			<img
+				src="pictures/ing.jpg"
+				alt="Офис ING в Мюнхене"
+				class="cover"
+			/>
 		</section>
 
 		<section class="slide" id="vyvody">
@@ -617,28 +495,25 @@
 			<h2 class="shout next">Но можно.</h2>
 		</section>
 		<section class="slide clear" id="barbie">
-			<img src="pictures/red.png" alt="barbie" class="cover" />
+			<img
+				src="pictures/red.png"
+				alt="Мотивационная картинка в розовых тонах"
+				class="cover"
+			/>
 		</section>
 		<section class="slide" id="pohvalit">
 			<h2 class="shout next" id="pohvalit-title">Похвалите себя!</h2>
 			<img
 				src="pictures/cute.jpg"
-				alt="Совмещение"
+				alt="Милая картинка для мотивации"
 				width="400"
 				class="cover"
 			/>
-			<style>
-				#pohvalit-title {
-					/* color: black; */
-					text-align: center;
-					text-shadow: 4px 4px 10px white;
-				}
-			</style>
 		</section>
-		<section class="slide" id="thank-you">
+		<section class="slide" id="thank-you" role="contentinfo">
 			<h2 class="shout">Спасибо за внимание!</h2>
 		</section>
-		<section class="slide" id="see-more">
+		<section class="slide" id="see-more" role="contentinfo">
 			<h2>
 				<div id="flex-container">
 					<img
@@ -646,7 +521,9 @@
 						src="https://realmonero.com/static/media/telegram.8b9d3b2993190f89b989.png"
 						alt="Telegram logo"
 					/>
-					<a href="https://t.me/talifa">t.me/talifa</a>
+					<a href="https://t.me/talifa" target="_blank" rel="noopener"
+						>t.me/talifa</a
+					>
 				</div>
 			</h2>
 
@@ -654,7 +531,7 @@
 				<div>
 					<img
 						src="pictures/telegram.png"
-						alt="qr"
+						alt="QR код для Telegram канала"
 						width="280"
 						id="telegram"
 					/>
@@ -662,43 +539,16 @@
 				<div>
 					<img
 						src="pictures/slides.png"
-						alt="qr"
+						alt="QR код для доступа к слайдам"
 						width="250"
 						id="slides"
 					/>
 					<div>(ссылка на слайды)</div>
 				</div>
 			</div>
-
-			<style>
-				#see-more #codes {
-					display: flex;
-					justify-content: space-between;
-					align-items: center;
-					gap: 20px;
-					color: var(--color-blue);
-					font-weight: bold;
-				}
-				#see-more h2 {
-					font-size: 90px;
-				}
-
-				#see-more #telegram-logo {
-					width: 1em;
-				}
-				#flex-container {
-					display: flex;
-					justify-content: center;
-				}
-			</style>
 		</section>
-		<!-- <footer class="badge">
-			<a href="https://github.com/shower/shower">Fork me on GitHub</a>
-		</footer> -->
-
 		<div class="progress"></div>
 
 		<script src="node_modules/@shower/core/dist/shower.js"></script>
-		<!-- Copyright © 3000 Yours Truly, Famous Inc. -->
 	</body>
 </html>
